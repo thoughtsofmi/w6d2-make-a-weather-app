@@ -1,0 +1,27 @@
+$color1: rgb(157, 223, 241);
+$color2: rgb(19, 135, 156);
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.bigNumbers {
+  font-size: 100px;
+}
+.blue{
+  color:rgb(19, 135, 156);
+}
+
+.wBox {
+ background: linear-gradient(rgb(157, 223, 241), rgb(19, 135, 156));
+}
+.weatherDescription {
+  color:rgb(234, 235, 245);
+  font-size: 30px;
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.bigNumbers {
+  font-size: 100px;
+}
+
+.blue {
+  color: #13879c;
+}
+
+.wBox {
+  background: linear-gradient(#9ddff1, #13879c);
+}
+
+.weatherDescription {
+  color: #eaebf5;
+  font-size: 30px;
+}
