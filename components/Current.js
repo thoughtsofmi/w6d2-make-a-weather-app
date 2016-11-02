@@ -7,15 +7,19 @@ import { sharedState, attachSharedState, detachSharedState } from 'react-helpers
 class Current extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+           city: 'Indianapolis',
+           temp: '--',
+           cond: ''
+        }
     }
+    
     componentDidMount() {
         fetch('http://api.openweathermap.org/data/2.5/weather?q=Indianapolis,us&units=imperial&APPID=b6238132eb70860247b18cda03735702')
 
        .then(response => response.json())
        .then((data)=>{
            this.setState({
-               city: data.name,
                temp: Math.round(data.main.temp),
                cond: data.weather[0].description
            })
@@ -25,18 +29,32 @@ class Current extends React.Component {
 
    }
     render() {
-        this.state={
-            city:'INDIANAPOLIS'
-        }
-        var date = moment().format("LLL")
-    return <div>
-    {this.state.city}
-    {date}
+   var date = moment().format("LLL")
 
-    <h1>{this.state.temp}</h1>
-    <p>{this.state.cond}</p>
+    return <div>
+    <div className="row text-center">
+      <div className="col-sm-12">
+        <h1 className="blue text-uppercase">{this.state.city}</h1>
+        <h4 className="blue"> {date}</h4>
+        <br />
+        <br />
+        <br />
+        <p className="bigNumbers blue">
+          {this.state.temp}&deg;
+        </p>
+        <p className="weatherDescription">{this.state.cond}</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
 
     </div>
+
     }
 }
 
