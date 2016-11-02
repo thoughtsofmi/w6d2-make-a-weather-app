@@ -13,7 +13,7 @@ class Current extends React.Component {
            cond: ''
         }
     }
-    
+
     componentDidMount() {
         fetch('http://api.openweathermap.org/data/2.5/weather?q=Indianapolis,us&units=imperial&APPID=b6238132eb70860247b18cda03735702')
 
@@ -32,6 +32,8 @@ class Current extends React.Component {
    var date = moment().format("LLL")
 
     return <div>
+
+    <div className="container wBox">
     <div className="row text-center">
       <div className="col-sm-12">
         <h1 className="blue text-uppercase">{this.state.city}</h1>
@@ -53,6 +55,7 @@ class Current extends React.Component {
       </div>
     </div>
 
+    </div>
     </div>
 
     }

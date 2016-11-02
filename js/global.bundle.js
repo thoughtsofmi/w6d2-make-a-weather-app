@@ -27168,42 +27168,46 @@
 	                null,
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'row text-center' },
+	                    { className: 'container wBox' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-sm-12' },
+	                        { className: 'row text-center' },
 	                        _react2.default.createElement(
-	                            'h1',
-	                            { className: 'blue text-uppercase' },
-	                            this.state.city
-	                        ),
-	                        _react2.default.createElement(
-	                            'h4',
-	                            { className: 'blue' },
-	                            ' ',
-	                            date
-	                        ),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: 'bigNumbers blue' },
-	                            this.state.temp,
-	                            '\xB0'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: 'weatherDescription' },
-	                            this.state.cond
-	                        ),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('br', null)
+	                            'div',
+	                            { className: 'col-sm-12' },
+	                            _react2.default.createElement(
+	                                'h1',
+	                                { className: 'blue text-uppercase' },
+	                                this.state.city
+	                            ),
+	                            _react2.default.createElement(
+	                                'h4',
+	                                { className: 'blue' },
+	                                ' ',
+	                                date
+	                            ),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'bigNumbers blue' },
+	                                this.state.temp,
+	                                '\xB0'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'weatherDescription' },
+	                                this.state.cond
+	                            ),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null)
+	                        )
 	                    )
 	                )
 	            );
